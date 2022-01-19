@@ -5,14 +5,21 @@
 #The '/opt/qt515/bin/qmake' part can be replaced with just 'qmake' on modern distros.
 #please also refer to https://gitlab.com/CalcProgrammer1/OpenRGB#linux
 
+### general dependencies (not comprehensive, may need more?)
+# sudo apt install mbedtls hidapi qt5-default
+
 ### GCC (needed to build and to run)
 # sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+##for building
 # sudo apt install gcc-11 g++-11
+##for installing
 # sudo apt install libgcc-s1
 
 ### QT (needed just to build, system QT will probably suffice to install/run, I think?)
-# x86 machines: sudo add-apt-repository ppa:beineri/opt-qt-5.15.2-bionic
-# ARM machines: sudo add-apt-repository ppa:theofficialgman/opt-qt-5.15.2-bionic-arm
+##x86 machines:
+# sudo add-apt-repository ppa:beineri/opt-qt-5.15.2-bionic
+##ARM machines:
+# sudo add-apt-repository ppa:theofficialgman/opt-qt-5.15.2-bionic-arm
 # sudo apt install qt515base AndOtherStuffHere
 
 ### LLVM 13
